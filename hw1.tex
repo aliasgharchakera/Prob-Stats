@@ -1,0 +1,131 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+%\documentclass[a4paper, 11pt]{article}
+\documentclass[answers]{exam}
+\usepackage[pdftex]{graphicx}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage[all]{hypcap}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumitem}
+\title{Habib University\\Math 310 - Introduction to Probability and Statistics\\Assignment 1}
+\author{}
+
+\newcommand{\mat}[1]{\boldsymbol { \mathsf{#1}} }
+
+\begin{document}
+\setlength{\parskip}{10pt}
+\setlength{\parindent}{0pt}
+\DeclareGraphicsExtensions{.pdf,.png,.gif,.jpg}
+\maketitle
+
+\section{Instructions}
+This assignment will contribute 2.5\% towards the final marks. The deadline to submit the assignment is 23:59 hours  February 6, 2022. The assignment must be submitted online via LMS. You should include both the tex and pdf files. \emph{Please ensure you submit a one tex and one pdf file}.
+
+You should attempt the assignment individually.
+\subsection{Marking scheme}
+All questions carry equal marks. Assignment will be marked out of 100. 
+\begin{itemize}
+  \item 30 marks will be for the presentation.  
+  \item 70 for the assignment
+\end{itemize}
+
+A good presentation would contain, but not limited to the following:
+\begin{itemize}
+   \item Document typed in \LaTeX. The basic template for \LaTeX and the associated makefile is available to download from the course website on LMS. You are welcome to use your own \LaTeX template.
+   \item A document free of typing errors
+   \item figures/diagrams, where possible, to explain your answers. As the clich\'e goes -- a picture is worth a thousand words
+   \item Concise and thorough answers. A long report doesn't necessarily mean a good report
+   \item List of references
+ \end{itemize}
+
+\subsection{Late submission policy}
+Late submissions, unless approved beforehand, will be penalised according to the following. 
+\begin{center}
+    \begin{tabular}{ | l | l |}
+    \hline
+    \# hours past the deadline & Percentage penalty on assignment  \\ \hline
+    $<$ 1 hour & 5\% \\ \hline
+    1-2 hours & 15\% \\ \hline
+    2-3 hours & 30\% \\ \hline
+    3-4 hours & 45\% \\ \hline
+    $>$4  hours & 0\% (not accepted) \\ \hline
+    \end{tabular}
+\end{center}
+
+
+\subsection{Plagiarism and collusion}
+There is a zero tolerance policy towards plagiarism and/or collusion. If a student(s) is found to have plagiarised and/or colluded, or the work submitted is not their own, (s)he reported to the academic code of conduct committee. This would affect your academic standing in the university. If you are unsure whether you are plagiarising, please ask.
+
+Please note that even if you understand everything, copying someone else's work is still plagiarism.     
+\begin{center}
+***
+\end{center}
+
+
+In the event that something is not clear from the question, you are strongly encouraged to use the LMS forum. \textbf{Individual enquiries to instructors and TA will not be entertained}
+
+
+\section{Questions}
+\begin{enumerate}
+\begin{questions}
+\question Consider the five regular dice that come in the shapes of Platonic solids, namely:
+a 4-sided die (tetrahedron), a 6-sided die (cube), an 8-sided die (octahedron), a 12-sided die
+(dodecahedron),  and a 20-sided die (icosahedron).  Audrey has one die of each type.  She
+selects one of the dice at random from her bag of dice (all are equally likely to be chosen),
+and when she rolls it, the value 10 appears.  What is the conditional probability that the die
+Audrey selected was the dodecahedron?
+    \begin{solution}
+    
+    \end{solution}
+
+\question Consider a standard deck of 52 cards (13 possible values, 4 suits of each).  Alice and Bob
+are each dealt five cards at random, without replacement between cards, and also without
+replacement between the two people.
+\begin{enumerate}[label=(\alph*)]
+\item In a flush, all 5 cards have the same suit. Given that Alice receives a flush, what is the conditional probability that Bob receives a
+flush too?
+\item In a (new type of) full house, let\'s say that 3 cards have the same suit, and 2 cards have
+the same suit; assume that a flush does not count as a full house, i.e., the two suits must be
+different. Given  that  Alice  receives  a  full  house,  what  is  the  conditional  probability  that  Bob
+receives a flush?
+\end{enumerate}
+%
+\item There are three coins available.  Coin ``A'' is dented in such a way that, when we flip it, we have a probability of 49\% of getting heads.  Coin ``B'' is dented in such a way that, when we flip it, we have a probability of 52\% of getting heads.  Coin ``C'' is a fair coin. We randomly grab a coin (all three coins are equally likely to be selected) and we flip it 7 times
+\begin{enumerate}[label=(\alph*)]
+\item If we get 7 heads, what is the conditional probability that we selected coin ``A''
+\item If we get 7 heads, what is the conditional probability that we selected coin ``B''
+\item If we get 7 heads, what is the conditional probability that we selected coin ``C''
+\end{enumerate}
+%
+\item Suppose that 37\% of the pages of an analysis textbook have a theorem, 29\% of the pages
+of  an  algebra  textbook  have  a  theorem,  and  20\%  of  the  pages  of  a  probability  textbook
+have a theorem.  The academic advisors have encouraged students to take at most one math
+course at a time, and as a result, 5\% of students are taking analysis, 13\% are taking algebra,
+10\% are taking probability, and the other 72\% are not taking a math course.
+If you randomly walk up to a table at the local coffee shop and peek over the student\'s
+shoulder,  and  the  student  happens  to  be  reading  a  theorem  in  a  math  book,  what  is  the
+probability that student is enrolled in a probability course?
+%
+\item We  deal  one  card  at  a  time  from  a traditional  deck  of  52  cards,  with  replacement  of
+the card back into the deck and also shuffling in between each deal.  We continue in this
+fashion until the first J, Q, or K appears.
+\begin{enumerate}[label=(\alph*)]
+\item What is the probability that it takes strictly less than 5 attempts to do this, i.e., that
+we get our first J, Q, or K within the first 4 attempts?
+\item What is the probability that it takes exactly 5 attempts to do this?
+\item Solve 5a again, but without replacing and shuffling the cards in between each deal
+\item Solve 5b again, but without replacing and shuffling the cards in between each deal
+\end{enumerate}
+%
+\item Roll three (6-sided) dice.
+\begin{enumerate}[label=(\alph*)]
+\item Using sets, find the probability that at least one value of ''2'' appears
+\item Using sets, find the probability that at most one value of ''2'' appear
+\end{enumerate}
+%
+\end{questions}
+\end{enumerate}
+
+\end{document}
